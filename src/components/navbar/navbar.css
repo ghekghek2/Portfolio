@@ -3,7 +3,7 @@ header{
     align-items: center;
     justify-content: space-between;
     height: 80px;
-    padding: 0 2rem;
+    padding: 0 ;
     background-color: var(--color-1);
     z-index: 100;
     position: relative;
@@ -47,7 +47,7 @@ header .nav-btn:hover{
 @media screen and (max-width: 1024px) {
     header{
         z-index: 3;
-       
+        padding: 0 1rem;
         position: relative;
 
     }
@@ -68,7 +68,7 @@ header nav{
     flex-direction: column;
     gap: 1.5rem;
     background-color: var(--color-1);
- 
+
     transition: 1s;
     transform: translateY(-100vh);
  
@@ -85,6 +85,7 @@ nav .nav-close-btn{
     position: absolute;
     top: 2rem;
     right: 2rem;
+   
 
 }
 
