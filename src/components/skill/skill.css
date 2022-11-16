@@ -1,0 +1,30 @@
+.skill{
+    display: flex;
+justify-content: center;
+align-items: center;
+
+width: 100%;
+
+
+}
+.skill-wrapper{
+    padding: 1em;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+flex-wrap: wrap;
+gap: 3em;
+
+}
+.skill-icon {
+    font-size: var(--step-5);
+    color: var(--color-3);
+    border: 1px solid red;
+  width: 150px ;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

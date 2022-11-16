@@ -13,7 +13,7 @@ const showNavbar = () =>{
   return (
     <header>
         <h3>logo</h3>
-        <nav ref={navRef}>
+        <nav className="n" ref={navRef}>
             <a href="/#">Home</a>
             <a href="/#">About me</a>
             <a href="/#">Skill</a>

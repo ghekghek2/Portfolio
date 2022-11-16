@@ -3,10 +3,11 @@ header{
     align-items: center;
     justify-content: space-between;
     height: 80px;
-    padding: 0 ;
+    padding: 0  ;
     background-color: var(--color-1);
     z-index: 100;
-    position: relative;
+    
+  
 }
 header h3{
     color: var(--color-2);
@@ -45,35 +46,41 @@ header .nav-btn:hover{
 }
 
 @media screen and (max-width: 1024px) {
+    header nav {
+
+        position: fixed;
+    top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        background-color: var(--color-1);
+    
+        transition: 1s;
+        transform: translateY(-100vh);
+  
+      
+    }
     header{
-        z-index: 3;
-        padding: 0 1rem;
-        position: relative;
+padding:  0 1em;
+   position: relative;
+     position: fixed;
+     width: 100%;
+height: 50px;
+    
 
     }
 header .nav-btn{
  display: block;
     opacity: 1;
+    padding-right: 1.5em;
 }
 
-header nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1.5rem;
-    background-color: var(--color-1);
 
-    transition: 1s;
-    transform: translateY(-100vh);
- 
-  
-}
 
 header .responsive-nav{
 
@@ -84,7 +91,7 @@ header .responsive-nav{
 nav .nav-close-btn{
     position: absolute;
     top: 2rem;
-    right: 2rem;
+    right: 0;
    
 
 }
