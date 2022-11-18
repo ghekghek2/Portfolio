@@ -8,13 +8,15 @@ function About() {
 const sectionRef = useRef(null);
 
 
-const intersection = useIntersection(sectionRef,{
+let intersection = useIntersection(sectionRef,{
 root:null,
-rootMargin:"300px",
+rootMargin:"200px",
 threshold:1,
 });
 
 const fadeIn = (element) =>{
+
+    
     gsap.to(element, 1,{
         opacity:1,
 

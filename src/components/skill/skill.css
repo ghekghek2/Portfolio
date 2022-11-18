@@ -1,30 +1,55 @@
 .skill{
     display: flex;
-justify-content: center;
+justify-content:center;
 align-items: center;
-
+position: relative;
 width: 100%;
+flex-direction: column;
+}
 
+.skill h3{
+
+    color: var(--color-3);
 
 }
 .skill-wrapper{
     padding: 1em;
     display: flex;
-    width: 50%;
+    width: 100%;
     justify-content: center;
     align-items: center;
+    justify-content: space-around;
 flex-wrap: wrap;
-gap: 3em;
+gap: 1em;
 
 }
 .skill-icon {
-    font-size: var(--step-5);
+    font-size: var(--step-4);
     color: var(--color-3);
-    border: 1px solid red;
-  width: 150px ;
-  height: 150px;
+    border: 1px dashed var(--color-3);
+
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  bottom: -120px;
+padding: .4em;
+
+}
+
+.jquery{
+    width: 60px;
+    height: 60px;
+    font-size: var(--step-4);
+}
+.skill-icon p {
+  font-size: var(--step-1);
+ font-style: italic;
+ font-weight: 700;
+
+}
+.skill-icon span{
+  font-size: var(--step-0);
+  font-weight: 500;
 }
